@@ -1,0 +1,17 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "globals.cpp"
+        "sensors.cpp"
+        "motor.cpp"
+        "control.cpp"
+        "comms.cpp"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        arduino
+        TMCStepper
+        Adafruit_Sensor
+        Adafruit_BNO055
+        Adafruit_BusIO
+)
